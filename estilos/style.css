@@ -37,7 +37,7 @@ body {
 
 
 section#login {
-    height: 400px;
+    height: 350px;
     width: 300px;
     padding: 20px;
     background: linear-gradient(to bottom,#ce4817cd , #a6033fd8, #02185ad5);
@@ -49,14 +49,23 @@ section#login {
     box-shadow: 1px 1px 5px rgb(61, 61, 61);
 }
 h1 {
+    position: relative;
+    top: 10px;
     text-align: center;
-    font-size: 2.2em;
-    margin-top: 19px;
+    font-size: 2em;
+    margin-top: 10x;
     color:white;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.561);
-    line-height: 30px;
+    line-height: 25px;
 
 } 
+.p1 {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin: 15px 0px 5px 0px;
+}
 p {
     font-size: 1em;
     font-weight: bolder;
@@ -98,6 +107,12 @@ div#campo1 {
     font-size: 1.7em;
 
 }
+#person:hover {
+    background: var(--cor4);
+    color: var(--cor1);
+    transition: 0.5s;
+
+}
 #key{
     background-color: var(--cor4);
     padding: 7px;
@@ -108,6 +123,12 @@ div#campo1 {
     margin: 0%;
     right: 10px;
     font-size: 1.7em;
+}
+#key:hover {
+    background: var(--cor4);
+    color: var(--cor1);
+    transition: 0.5s;
+
 }
 
 input[type=button]{
@@ -123,6 +144,13 @@ input[type=button]{
     color: var(--cor3);
     border-radius: 20px;
 }
+input[type=button]:hover{
+    background: var(--cor4);
+    color: var(--cor1);
+    transition: 0.5s;
+
+}
+
 
 a {
     display: block;
@@ -138,9 +166,9 @@ a {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:992px){
     section#login {
-        height: 400px;
+        height: 350px;
         width: 400px;
         padding: 20px;
         background: linear-gradient(to bottom,#ce4817cd , #a6033fd8, #02185ad5);
@@ -194,5 +222,106 @@ a {
         padding: 10px;
         border-radius: 14px;
     }
+    input[type=button]{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        padding: 7px;
+        width: 100%;
+        background-color: var(--cor5);
+        font-weight: bolder;
+        font-size: 1em;
+        color: var(--cor3);
+        border-radius: 20px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    section#login {
+        height: 500px;
+        width: 500px;
+        padding: 20px;
+        background: linear-gradient(to bottom,#ce4817cd , #a6033fd8, #02185ad5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 24px;
+        box-shadow: 1px 1px 5px rgb(61, 61, 61);
+    }
+
+    form { 
+        position: relative;
+        top: 5%;
+        left: 0%;
+        height: 120px;
+        width: 500px;
+    }
+
+    #person{
+        color: var(--cor3);
+        position: relative;
+        top: 13px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--cor4);
+        font-size: 2em;
+    
+    }
+    #key{
+        background-color: var(--cor4);
+        padding: 10px;
+        border-radius: 50%;
+        color: var(--cor3);
+        position: relative;
+        top: 13px;
+        margin: 0%;
+        right: 10px;
+        font-size: 2em;
+    }
+
+    input[type=email] {
+        width: calc(100% - 95px);
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    input[type=password] {
+        width: calc(100% - 95px);
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    input[type=button]{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        padding: 7px;
+        width: 100%;
+        background-color: var(--cor5);
+        font-weight: bolder;
+        font-size: 1em;
+        color: var(--cor3);
+        border-radius: 20px;
+    }
+    div.envenq {
+        position: relative;
+        top: 15%;
+
+    }
+   div.novaconta {
+    position: relative;
+    top: 19%;
+   }
+   .p1 {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin: 50px 0px 5px 0px;
+} 
 
 }
