@@ -1,5 +1,14 @@
 @charset "UTF-8";
-/* Mobile Firts */
+/* Mobile Firts 
+Typical Device Breakpoints
+---------------------------
+Pequena telas: até 600px
+Celular: 600px atyé 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
 
 :root {
     --cor1: #F27405;
@@ -15,7 +24,7 @@
 
 }
 html, body {
-    height: 98vh;
+    height: 90vh;
     width: 100vw;
     position: relative;
 }
@@ -126,4 +135,64 @@ a {
     border-radius: 7px;
     text-decoration: none;
     font-size: .7em;
+}
+
+
+@media screen and (min-width: 768px) {
+    section#login {
+        height: 400px;
+        width: 400px;
+        padding: 20px;
+        background: linear-gradient(to bottom,#ce4817cd , #a6033fd8, #02185ad5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 24px;
+        box-shadow: 1px 1px 5px rgb(61, 61, 61);
+    }
+
+    form { 
+        position: relative;
+        top: 0%;
+        left: 0%;
+        height: 120px;
+        width: 415px;
+    }
+
+    #person{
+        color: var(--cor3);
+        position: relative;
+        top: 5px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--cor4);
+        font-size: 1.7em;
+    
+    }
+    #key{
+        background-color: var(--cor4);
+        padding: 10px;
+        border-radius: 50%;
+        color: var(--cor3);
+        position: relative;
+        top: 5px;
+        margin: 0%;
+        right: 10px;
+        font-size: 1.7em;
+    }
+
+    input[type=email] {
+        width: calc(100% - 85px);
+        padding: 10px;
+        border-radius: 14px;
+    }
+
+    input[type=password] {
+        width: calc(100% - 85px);
+        padding: 10px;
+        border-radius: 14px;
+    }
+
 }
