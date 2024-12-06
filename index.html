@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+   
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="formu">
-                <h1><strong>Seja bem-vindo de volta</strong></h1>
-                <p> Faça seu login</p>
-            <form action="login.php" method="post">
-                <label for="iuser"></label>
-            </form>
-            </div>
+            <h1><strong>Seja bem-vindo de volta</strong></h1>
+            <p> Faça seu login</p>
+
+                <form action="login.php" method="post">
+                    <div id="campo1">
+                        <label for="iemail">
+                            <span id="person" class="material-symbols-outlined">person</span>
+                        </label>
+                        <input type="email" id="iemail" required placeholder="Informe seu e-mail">
+                    </div>
+                    <div id="campo2">
+                        <label for="ipass"> 
+                         <span id="key" class="material-symbols-outlined" >vpn_key</span>
+                        </label>
+                        <input type="password" name="pass" id="ipass" required placeholder="Digite sua senha">
+                    </div>
+                </form>
+                <div>
+                    <a href="#"> Esqueci a senha</a>
+                    <input type="button" value="Enviar">
+                </div>
+                <div>
+                    <p>Não tem uma conta?</p>
+                    <a href=""> Crie uma conta aqui</a>
+                </div>
         </section>
     </main>
 </body>

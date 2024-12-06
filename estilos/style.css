@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/* Mobile Firts
-
-
-
-
-
-*/
+/* Mobile Firts */
 
 :root {
     --cor1: #F27405;
@@ -17,24 +11,21 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-
-html , body {
-    
-
+html, body {
+    height: 98vh;
+    width: 100vw;
+    position: relative;
 }
+
 body {
     background: url(../imagens/back.jpg) black no-repeat fixed center left;
     background-size: cover;
     
 }
-main {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
+
 
 section#login {
     height: 400px;
@@ -49,22 +40,90 @@ section#login {
     box-shadow: 1px 1px 5px rgb(61, 61, 61);
 }
 h1 {
-    font-size: 2em;
-    margin-top: 30px;
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 19px;
     color:white;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.561);
+    line-height: 30px;
+
 } 
-h4 {
-    text-align: center;
-    color:white;
-}
 p {
-    color: white;
+    font-size: 1em;
     font-weight: bolder;
-    margin-top: 10px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.674);
+    text-align: center;
+    color: white;
+    margin: 15px 0px 5px 0px;
+}
+form { 
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 120px;
+    width: 320px;
+}
+div#campo1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+ input[type=email] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border-radius: 14px;
+ }
+
+ input[type=password] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border-radius: 14px;
+ }
+
+ #person{
+    color: var(--cor3);
+    position: relative;
+    top: 5px;
+    right: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: var(--cor4);
+    font-size: 1.7em;
+
+}
+#key{
+    background-color: var(--cor4);
+    padding: 7px;
+    border-radius: 50%;
+    color: var(--cor3);
+    position: relative;
+    top: 5px;
+    margin: 0%;
+    right: 10px;
+    font-size: 1.7em;
 }
 
-div > h1, p {
+input[type=button]{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    padding: 7px;
+    width: 110%;
+    background-color: var(--cor5);
+    font-weight: bolder;
+    font-size: 1em;
+    color: var(--cor3);
+    border-radius: 20px;
+}
+
+a {
+    display: block;
     text-align: center;
+    margin: auto;
+    width: 150px;
+    background-color: var();
+    color: white;
+    padding: 4px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: .7em;
 }
